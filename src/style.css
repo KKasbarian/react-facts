@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background: #282D35;
+}
+
+.navbar {
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #21222A;
+}
+
+.navbar .logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo-container img {
+    margin-right: 10px;
+}
+
+.navbar .logo-container .logo-name {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #61DAFB;
+}
+
+.navbar .nav-desc-container .nav-desc {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #DEEBF8;
+}
+
+.main-container {
+    padding: 60px 25px 120px 25px;
+    padding: 200px 25px;
+    color: #fff;
+    background-image: url('./images/react-logo-bg.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.main-container h1 {
+    margin: 0;
+    margin-bottom: 45px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.main-container ul {
+    list-style: none;
+}
+
+.main-container ul li {
+    position: relative;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.main-container ul li::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: -20px;
+    width: 10px;
+    height: 10px;
+    background: #61DAFB;
+    border-radius: 50%;
+}
+
+footer.footer {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    background: #21222A;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar .logo-container {
+        margin-bottom: 10px;
+    }
+
+    .main-container {
+        padding: 100px 25px;
+    }
+}
